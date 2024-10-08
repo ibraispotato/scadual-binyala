@@ -119,6 +119,8 @@
     }
     .upperRegister {
         padding: 10px;
+        position: fixed;
+        width: 90%;
     }
     .firstBackGround{
         width: 100%;
