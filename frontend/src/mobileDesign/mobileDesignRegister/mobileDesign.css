@@ -109,18 +109,20 @@
         overflow: hidden;
     }
     .all {
-        background-color: white;
+        /* background-color: white; */
         display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        height: 100vh;
+        height: 100%;
         overflow: hidden;
-        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
     .upperRegister {
         padding: 10px;
-        position: fixed;
+        position: relative;
         width: 90%;
+    }
+    body{
+        background-color: white;
     }
     .firstBackGround{
         width: 100%;
@@ -128,13 +130,14 @@
         border-radius: 0px;
         display: none;
     }
-    .secoundBackGround{
+    .secoundBackGround {
         max-width: 100%;
         min-width: 100%;
-        max-height: 100%;
-        min-height: 100%;
+        /* max-height: 0%;
+        min-height: 0%; */
         border-radius: 0px;
         overflow: hidden;
+        position: relative;
         background-color: rgba(255, 255, 255, 0);
     }
 }
