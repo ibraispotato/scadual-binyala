@@ -10,8 +10,10 @@ const path = require('path')
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(cors({
+    origin: 'https://scadual-binyala-backend.vercel.app', // Replace with your front-end URL
     credentials: true
-  }));
+}));
+
 app.use(express.json())
 app.use((req,res,next) => {
     console.log(req.path , req.method)
