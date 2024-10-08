@@ -110,7 +110,13 @@
     }
     .all{
         background-color: white;
-    }
+        display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
     .upperRegister {
         padding: 5px 30px;
     }
