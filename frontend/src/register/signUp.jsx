@@ -16,8 +16,7 @@ const SignUp = () => {
     const [error,setError] = useState(null)
     console.log(error)
     const {dispatch} = Auth()
-    // console.log(process.env.REACT_APP_APi_LINK)
-    // console.log('https://scadual-binyala-backend.vercel.app')
+    
     const signUp = async (e) => {
         e.preventDefault()
         const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/users/signup`,{

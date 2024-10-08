@@ -32,7 +32,7 @@ const {logout} = useLOgOut()
 value.tz('Asia/Riyadh').format('YYYY-MM-DD HH:mm:ss')
 
 const getAllUsers = async () => {
-  const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/users/getAllUsers`,{
+  const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/users/getAllUsers`,{
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ useEffect(() => {
   getAllUsers()
 },[])
 const GetAllDays = async () => {
-  const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/Scadual/getMyDays`,{
+  const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/Scadual/getMyDays`,{
     method: 'GET',
     headers:{
       'Content-Type': 'application/json',
@@ -86,7 +86,7 @@ useEffect(() => {
   }));
 }, [addUsers]);
 const GetMyUser = async () => {
-  const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/users/getOneUser`,{
+  const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/users/getOneUser`,{
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

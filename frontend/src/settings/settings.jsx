@@ -32,7 +32,7 @@ const {logout} = useLOgOut()
 
 const settingsFunction = async (e) => {
   e.preventDefault()
-  const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/users/editUserDetails`,{
+  const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/users/editUserDetails`,{
     method:'POST',
     headers:{
       'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ const settingsFunction = async (e) => {
   
 }//this function for edit ur account information
 const GetMyUser = async () => {
-  const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/users/getOneUser`,{
+  const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/users/getOneUser`,{
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

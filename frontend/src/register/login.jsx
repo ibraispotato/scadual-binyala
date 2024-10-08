@@ -12,7 +12,7 @@ const SignUp = () => {
     const {dispatch,user} = Auth()
     const Login = async (e) => {
         e.preventDefault()
-        const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/users/login`,{
+        const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/users/login`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'

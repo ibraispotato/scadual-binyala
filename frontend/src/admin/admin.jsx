@@ -73,7 +73,7 @@ useEffect(() => {
     }
     },[value,selectTime])
 const getAllUsers = async () => {
-  const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/users/getAllUsers`,{
+  const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/users/getAllUsers`,{
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -139,7 +139,7 @@ useEffect(() => {
 
 const postADate = async (e) => {
   e.preventDefault()
-  const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/Scadual/sendWeeksAndDays`,{
+  const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/Scadual/sendWeeksAndDays`,{
     method: 'POST',
     headers:{
       'Content-Type': 'application/json',
@@ -157,7 +157,7 @@ const postADate = async (e) => {
   }
 } // this function adds an the dates and time on the database
 const GetMyUser = async () => {
-  const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/users/getOneUser`,{
+  const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/users/getOneUser`,{
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',

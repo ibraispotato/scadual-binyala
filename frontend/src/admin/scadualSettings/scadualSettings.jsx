@@ -24,7 +24,7 @@ const [btnBurgur,setBtnBurgur] = useState(false)
     const { logout } = useLOgOut();
 
     const GetMyUser = async () => {
-        const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/users/getOneUser`, {
+        const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/users/getOneUser`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ const [btnBurgur,setBtnBurgur] = useState(false)
     }, [user]);
 
     const getAllUsersFunction = async () => {
-        const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/users/getAllUsers`, {
+        const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/users/getAllUsers`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const [btnBurgur,setBtnBurgur] = useState(false)
     }, []);
 
     const GetAllDays = async (e) => {
-        const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/Scadual/getMyDaysScadualSettings/${e}`, {
+        const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/Scadual/getMyDaysScadualSettings/${e}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ const [btnBurgur,setBtnBurgur] = useState(false)
     const dayNames = addUsers.flatMap(res => res.dayName.map(day => getDayName(day.start)));
     const deleteDate = async (e,id,userId) => {
         e.preventDefault()
-        const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/Scadual/deleteScadual/${id}`, {
+        const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/Scadual/deleteScadual/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -133,7 +133,7 @@ const [btnBurgur,setBtnBurgur] = useState(false)
             start:firstDateValue===""?dayName.start:firstDateValue,
             title:dayName.title
         }]
-        const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/Scadual/updateDay/${id._id}`, {
+        const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/Scadual/updateDay/${id._id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
