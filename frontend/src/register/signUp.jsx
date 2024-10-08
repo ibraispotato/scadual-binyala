@@ -55,8 +55,8 @@ const SignUp = () => {
             
         </div>
         </div>
-        <form onSubmit={signUp} className='allSignUp'>
-        <div className=''>
+        <form onSubmit={signUp} className=''>
+        <div className='allSignUp'>
             <div className='upperText'>
                 <div className='iconRegister'>
                     <FontAwesomeIcon icon={faUser}/>
