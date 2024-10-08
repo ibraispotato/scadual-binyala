@@ -1,0 +1,87 @@
+.rightAdmin.Calendar.settings{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.topTextSettings{
+    font-size: 28px;
+    font-weight: 500;
+}
+.paraTextSettings{
+    font-weight: 800;
+    font-size: 16px;
+    color: gray;
+}
+.accountInfoSettings{
+    font-size: 17px;
+    font-weight: 800;
+
+}
+.emailAndPasswordSettings{
+    display: flex;
+    gap: 50px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.inputSettings{
+    padding: 5px;
+    width: 200px;
+    outline: none;
+}
+.Settings{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+    padding: 30px; 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.521);
+    /* width: 100%; */
+    /* align-items: center; */
+}
+.AccountSettings{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.saveChangesSettings{
+    /* width: 24%; */
+    font-weight: 700;
+    padding: 13px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    background-color: #a800fca9;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+.inputAndText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.a{
+    display: flex;
+    gap: 15px;
+}
+.btnActiveInputSettings{
+    padding: 10px 15px;
+    font-weight: 700;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    background-color: #a800fca9;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btnActiveInputSettings:hover{
+    background-color: #d200fca9;
+}
+.saveChangesSettings.disable{
+    background-color: #580169a9;
+    cursor: default;
+}

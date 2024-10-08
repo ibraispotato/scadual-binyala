@@ -1,0 +1,200 @@
+.allAdmin{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    /* padding: 10px; */
+    gap: 50px;
+}
+.borderAdmin{
+    border: 1px solid #a800fca9;
+    height: 100vh;
+}
+.imgAdmin{
+    width: 150px;
+    border-radius: 50%;
+}
+.leftAdmin {
+    /* padding: 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    height: 100vh;
+    width: 40vh;
+}
+.divBtnAdmin{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.btnAdmin{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #a800fca9;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+.btnAdmin:hover{
+    background-color: #d200fca9;
+
+}
+.timeDiv{
+    display: flex;
+    flex-direction: column;
+}
+.selectOption{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.Off{
+    color: rgb(184, 165, 1);
+
+}
+.VAC{
+    color: rgb(0, 168, 14);
+}
+.Afternoon{
+    color: gray;
+}
+.Morning{
+    color: rgb(0, 110, 255);
+}
+.timeAdmin{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.profileUsersAdmin{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.usersAdmin{
+    width: 220px;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .usersAdmin::-webkit-scrollbar {
+    width: 10px;
+    background-color: #00000056;
+    border-radius: 19px;
+    
+}
+  .usersAdmin::-webkit-scrollbar-thumb {
+    background-color: #e100ff56;
+    border-radius: 19px;
+    /* height: 1; */
+  }
+  .usersAdmin{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: space-around; */
+  }
+  .rightAdmin{
+    display: flex;
+    gap: 20px;
+  }
+  .insideUsersAdmin {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+    /* background: white; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.insideUsersAdmin:hover{
+  transition: 0.5s;
+
+  background-color: white;
+  /* background: linear-gradient(45deg, rgba(255, 255, 255, 0.74) 0%, rgba(167, 123, 224, 0.575) 100%); */
+
+}
+  .addUsersAdmin{
+    padding: 7px;
+    width: 60px;
+    border: none;
+    outline: none;
+    background-color: #a800fca9;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .addUsersAdmin:hover{
+    background-color: #e100ffa8;
+
+  }
+  .imgAndNameUsersAdmin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-content: center;
+    width: 100%;
+}
+.saveBtnAdmin{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #a800fca9;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+.saveBtnAdmin:hover{
+  background-color: #e100ffa8;
+
+}
+.message{
+  position: absolute;
+  transform: translate(390%,550%);
+  background-color: #e100ffad;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+}
+.messageText{
+    font-size: 18px;
+  font-weight: 800;
+}
+.AdminCalendar{
+  width: 600px;
+}
+.rightAdmin.Calendar.settings.scadual{
+    width: 40%;
+}
+.Settings.scadual {
+  width: 80%;
+}
+.usersAdmin.scadualSettings{
+  width: 100%;
+  height:100%;
+}
+.saveBtnAdmin.disableAdmin{
+  cursor:auto;
+  background-color: #00000056;
+}

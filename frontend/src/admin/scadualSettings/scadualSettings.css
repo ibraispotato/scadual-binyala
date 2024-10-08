@@ -1,0 +1,49 @@
+.MotherOfTheDay{
+    padding: 10px;
+    background-color: white;
+    width: 96%;
+    border-radius: 10px;
+}
+.Settings.scadual{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 90%;
+}
+.insideUsersAdmin.Active{
+    /* padding: 10px; */
+    /* border-radius: 10px; */
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    /* background: white; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.BtnScadualSettings{
+    display: flex;
+    justify-content: space-between;
+}
+.saveChangesSettings.ScadualSettings{
+    width: 100%;
+}
+.AllDatesAndBtns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.btnScadualSettings{
+    width: 15%;
+}
+.message.scadualSettings{
+    transform: translate(710%, 550%);
+    background-color: #e100ffc9;
+}
+.saveChangesSettings.ScadualSettings.disableScadual{
+    cursor:auto;
+    background-color: #00000056;
+}

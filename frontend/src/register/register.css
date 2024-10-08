@@ -1,0 +1,191 @@
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.firstBackGround{
+    position: fixed;
+    background: rgba(246, 246, 246, 0.432);
+    width: 1500px;
+    height: 800px;
+    border-radius: 50px;
+    backdrop-filter: blur(30px);
+    z-index: -1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.secoundBackGround{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 1450px;
+    height: 760px;
+    border-radius: 50px;
+    backdrop-filter: blur(30px);
+    /* z-index: -1; */
+
+}
+.upperRegister{
+    display: flex;
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+    position: relative;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.binYalaText{
+    font-weight: 800;
+}
+.binYalaBtn{
+    z-index: 1;
+    padding: 6px 12px;
+    /* border: none; */
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+
+}
+    .allSignUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 480px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    height: 600px;
+    /* transform: translate(200%,100%); */
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+
+}
+.upperText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+
+}
+.signUpText{
+        font-weight: 800;
+        font-size: 25px;
+}
+.paraRegister{
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    width: 300px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.inputRegister{
+    padding: 10px 12px;
+    width: 300px;
+    /* border: none; */
+    /* outline: none; */
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.inputRegister::placeholder{
+    font-size: 13px;
+    font-weight: 700;
+    color: black;
+}
+.eyeSlash{
+    color: rgba(70, 70, 70, 0.795);
+
+
+    transform: translate(1440%,350%);
+    position: absolute;
+    cursor: pointer;
+}
+.eye{
+    color: rgba(70, 70, 70, 0.795);
+
+    transform: translate(1605%,350%);
+    position: absolute;
+    cursor: pointer;
+}
+.iconRegister{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    font-size: 20px;
+    width: 50px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gotAnAccountDiv{
+    text-align: center;
+}
+.linkLogin{
+    font-weight: 800;
+    cursor: pointer;
+    
+}
+.firstInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.oldInputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inputRegister.oldInputs{
+    background-color: rgb(212, 212, 212);
+}
+.signUpRegisterBtn{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #a800fca9;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.error{
+    /* position: fixed; */
+    text-align: center;
+    /* background-color: #a800fca9; */
+    padding: 10px;
+    border-radius: 6px;
+    /* transform: translate(200%,500%); */
+}
+.errorText{
+    /* position: fixed; */
+    font-weight: 800;
+    color: black;
+    font-size: 20px;
+    /* transform: translate(200%,500%); */
+
+}
+.arrowLeftRegister{
+    cursor: pointer;
+}
+.forgotPassword{
+    color: rgb(255, 0, 234);
+}
+.eye.resetPassword{
+    transform: translate(1630%,60%);
+
+}
+.eyeSlash.resetPassword{
+    transform: translate(1462%,60%);
+}
