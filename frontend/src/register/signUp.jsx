@@ -20,7 +20,7 @@ const SignUp = () => {
     // console.log('https://scadual-binyala-backend.vercel.app')
     const signUp = async (e) => {
         e.preventDefault()
-        const response = await fetch(`${process.env.REACT_APP_APi_LINK}/binYala/users/signup`,{
+        const response = await fetch(`${'https://scadual-binyala-backend.vercel.app'}/binYala/users/signup`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
