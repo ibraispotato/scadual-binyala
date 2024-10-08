@@ -18,7 +18,7 @@
     
 }
 .secoundBackGround{
-    position: absolute;
+    position: fixed;
     background-color: rgb(255, 255, 255);
     width: 1450px;
     height: 760px;
