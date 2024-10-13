@@ -169,7 +169,7 @@ const [btnBurgur,setBtnBurgur] = useState(false)
     return (
         <div className='allAdmin adminScadual'>
             <div className={btnBurgur?'BarsDiv MyScadual':"BarsDiv MyScadual"}>
-        <p onClick={() => setBtnBurgur(prev => !prev)} className='Bars MyScadual scadualSettin'><FontAwesomeIcon icon={faBars}/></p>
+        <p onClick={() => setBtnBurgur(prev => !prev)} className='Bars'><FontAwesomeIcon icon={faBars}/></p>
       </div>
       <div className={btnBurgur?'leftAdmin Active':"leftAdmin Disable"}>
 
