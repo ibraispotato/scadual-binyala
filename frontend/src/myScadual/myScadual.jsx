@@ -107,8 +107,8 @@ const logoutFunction = () => {
   logout()
 }// logout function
   return (
-    <div className='allAdmin settings'>
-      <div className={btnBurgur?'BarsDiv Disable MyScadual':"BarsDiv MyScadual"}>
+    <div className='allAdmin adminScadual'>
+      <div className={btnBurgur?'BarsDiv MyScadual':"BarsDiv MyScadual"}>
         <p onClick={() => setBtnBurgur(prev => !prev)} className='Bars MyScadual'><FontAwesomeIcon icon={faBars}/></p>
       </div>
       <div className={btnBurgur?'leftAdmin Active':"leftAdmin Disable"}>
@@ -155,7 +155,7 @@ const logoutFunction = () => {
       </div>
       <div className='borderAdmin'></div>
 
-      <div  onMouseOver={() => (setBtnBurgur(false))} className='rightAdmin Calendar'>
+      <div  onMouseOver={() => (setBtnBurgur(false))} className='rightAdmin Calendar adminScadual'>
 {/* <div> */}
       <ScheduleXCalendar className={'calendars'} key={addUsers} calendarApp={calendar} />
       {/* </div> */}

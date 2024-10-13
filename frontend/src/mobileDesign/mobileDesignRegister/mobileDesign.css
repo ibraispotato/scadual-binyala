@@ -141,6 +141,7 @@
     }
 }
 @media(max-width:425px){
+    
     .allSignUp {
         width: 350px;
         height: auto;
