@@ -74,7 +74,7 @@ const logoutFunction = () => {
   logout()
 }// logout function
   return (
-    <div className='allAdmin'>
+    <div className='allAdmin adminScadual'>
      <div className={btnBurgur?'BarsDiv MyScadual':"BarsDiv MyScadual"}>
         <p onClick={() => setBtnBurgur(prev => !prev)} className='Bars MyScadual settingsAccount'><FontAwesomeIcon icon={faBars}/></p>
       </div>

@@ -167,11 +167,11 @@ const [btnBurgur,setBtnBurgur] = useState(false)
         return ()=>clearTimeout(time)
         },[])// it's for the message it pops up and leaves in 4 secounds
     return (
-        <div className='allAdmin settings scadualSettings'>
-            <div className={btnBurgur?'BarsDiv Disable MyScadual':"BarsDiv MyScadual scadualSettings"}>
+        <div className='allAdmin adminScadual'>
+            <div className={btnBurgur?'BarsDiv MyScadual':"BarsDiv MyScadual"}>
         <p onClick={() => setBtnBurgur(prev => !prev)} className='Bars MyScadual scadualSettin'><FontAwesomeIcon icon={faBars}/></p>
       </div>
-      <div className={btnBurgur?'leftAdmin Active MyScadual':"leftAdmin Disable MyScadual"}>
+      <div className={btnBurgur?'leftAdmin Active':"leftAdmin Disable"}>
 
                 <img className='imgAdmin' src={user.profilePic} alt="Profile" />
                 <p>Welcome mr {getMyAccount.FirstName} {getMyAccount.LastName}</p>
