@@ -87,10 +87,10 @@
 .Settings {
     background-color: rgba(255, 255, 255, 0) !important;
 }
-.rightAdmin.Calendar {
+/* .rightAdmin.Calendar {
     height: 100% !important;
 
-}
+} */
 .Settings.scadual {
     display: flex;
     flex-direction: column;
