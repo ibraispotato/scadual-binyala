@@ -20,9 +20,9 @@ app.use((req,res,next) => {
 app.use('/binYala/users/',users)
 app.use('/binYala/Scadual',Scadual)
 mongoose.connect(process.env.MONGOURI).then(() => {
-    // app.listen(process.env.PORT||4000, () => {
-    //     console.log('listening on '+process.env.PORT||4000)
-    // })
-    module.exports.handler = serverless(app);
+    app.listen(process.env.PORT||4000, () => {
+        console.log('listening on '+process.env.PORT||4000)
+    })
+    // module.exports.handler = serverless(app);
 
 }).catch((err) => console.error(err))
