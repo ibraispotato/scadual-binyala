@@ -1,7 +1,7 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
 const cors = require('cors')
-
+const serverless = require("serverless-http")
 const express = require('express')
 const users = require('./routes/userRoutes')
 const Scadual = require('./routes/scadualRoutes')
@@ -20,7 +20,9 @@ app.use((req,res,next) => {
 app.use('/binYala/users/',users)
 app.use('/binYala/Scadual',Scadual)
 mongoose.connect(process.env.MONGOURI).then(() => {
-    app.listen(process.env.PORT||4000, () => {
-        console.log('listening on '+process.env.PORT||4000)
-    })
+    // app.listen(process.env.PORT||4000, () => {
+    //     console.log('listening on '+process.env.PORT||4000)
+    // })
+    module.exports.handler = serverless(app);
+
 }).catch((err) => console.error(err))
